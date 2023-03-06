@@ -43,7 +43,7 @@ public class GeneratorMojo extends AbstractMojo {
             getLog().warn("a");
             getLog().warn("a");
 
-            int returnValue = org.congocc.Main.mainProgram(grammarFile.toPath(), outputDir.toPath(), codeLang, jdkTarget, quiet, symbols);
+            int returnValue = org.congocc.app.Main.mainProgram(grammarFile.toPath(), outputDir.toPath(), codeLang, jdkTarget, quiet, symbols);
        
             this.project.addCompileSourceRoot( outputDir.getAbsolutePath() );
             getLog().warn("return:" + returnValue);

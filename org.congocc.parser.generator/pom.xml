@@ -7,6 +7,8 @@
         <relativePath>../pom.xml</relativePath>
     </parent>
     <artifactId>org.congocc.parser.generator</artifactId>
+    <name>CongoCC Parser-Generator</name>
+    <description>CongoCC Parser-Generator is a All-In-One, no dependency Parser generator.</description>
     <build>
         <plugins>
             <plugin>
@@ -16,11 +18,11 @@
                 <configuration>
                     <bnd>
                         <![CDATA[
-                        Main-Class: org.congocc.Main
+                        Main-Class: org.congocc.app.Main
                         Export-Package: org.congocc.*
                         
                         # Optional a local relative path to congocc-full.jar
-                        -includeresource @https://congocc.org/download/congocc-full.jar
+                        -includeresource @https://parsers.org/download/congocc-full.jar
                      ]]>
                     </bnd>
                 </configuration>
